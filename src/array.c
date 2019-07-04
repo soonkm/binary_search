@@ -9,17 +9,17 @@ int A[100000];
 int main(){
   int i;
  
-  int ub = 0;
+  int lb = 0;
     scanf("%d%d", &n, &k);
-   int lb = n;
+  int ub = n;
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-  while (lb - ub > 1){
+  while (ub - lb > 1){
       int m = (lb +ub)/2;
-      if (A[m] >= k) lb = m;
-      else ub = m;
+      if (A[m] >= k) ub = m;
+      else lb = m;
    }
-   printf("%d/n",lb);
-   return n;
+   printf("%d\n",ub);
+   return 0;
 }
