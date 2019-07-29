@@ -9,7 +9,7 @@ int A[100000];
 int main(){
   int i;
  
-  int lb = 0;
+  int lb = -1;
     scanf("%d%d", &n, &k);
   int ub = n;
   for(i = 0; i < n; i++){

@@ -30,7 +30,7 @@ int main(){
       if (p(m)) ub = m;
       else lb =m;    
    }
-   printf("%d/n",ub); 
+   printf("%d\n",ub); 
    return n;
 }
 
